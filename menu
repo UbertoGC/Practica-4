@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-bienvenido <c:out value="${usuario.nombre}" default="desconocido"/>
+//aviso profe: lo de apellidos lo agregue recientemente asi que el resultado tendra escritos los apellidos extra, pero sigue igual
+bienvenido <c:out value="${usuario.nombre} ${usuario.apellidos}" default="desconocido"/>
 </body>
 </html>
