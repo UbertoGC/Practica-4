@@ -1,4 +1,5 @@
 package unsa.servlet.unsa;
+
 public class Usuario {
 	
 	private String nombre;
@@ -6,16 +7,19 @@ public class Usuario {
 	
 	public Usuario() {
 	}
-	public String devnom(){
+	public String getNombre() {
 		return nombre;
 	}
-	public void ingnom(String nombre){
+
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String devape(){
+
+	public String getApellidos() {
 		return apellidos;
 	}
-	public void ingape(String apellidos){
+
+	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
 }
