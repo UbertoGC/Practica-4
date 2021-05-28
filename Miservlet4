@@ -31,8 +31,8 @@ public class Miservlet4 extends HttpServlet {
 		String name = request.getParameter("nombre");
 		String lastname = request.getParameter("apellidos");
 		Usuario usuario = new Usuario();
-		usuario.ingnom(name);
-		usuario.ingape(lastname);
+		usuario.setNombre(name);
+		usuario.setApellidos(lastname);
 		
 		request.setAttribute("usuario", usuario);
 		RequestDispatcher dispatcher =
